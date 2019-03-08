@@ -31,11 +31,11 @@ class App extends Component {
     })
     console.log(this.state.chosenfood)
     console.log(this.state.list.length, "length")
-    }
+}
   render() {
     return (
       <div className="App">
-       <h1>Get me Food!</h1>
+       <h1 className="jumbotron">Get me Food!</h1>
        <br></br>
        <p>(a neat tool designed to help users find the best rated restaurants around them.)</p>
        <form onSubmit={this.handleSubmit}>
@@ -46,6 +46,7 @@ class App extends Component {
       { this.state.chosenfood && 
       <FoodChoice foodchoice = {this.state.chosenfood}/> 
      }
+     <button type="button" className="btn btn-primary">Primary</button>
       </div>
       
     );
