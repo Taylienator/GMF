@@ -31,6 +31,11 @@ class App extends Component {
     })
     console.log(this.state.chosenfood)
     console.log(this.state.list.length, "length")
+
+    //code to get users geolocation
+}
+async getLocation(){
+  const response = await fetch("https://us-central1-quick-doodad-233803.cloudfunctions.net/geolocation")
 }
   render() {
     return (
